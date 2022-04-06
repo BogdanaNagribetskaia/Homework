@@ -9,7 +9,7 @@
 }
 
 body{
- background-image: url('Homework/background__img.jpg');
+ background-image: url('../background__img.jpg');
 }
 
 .header {
