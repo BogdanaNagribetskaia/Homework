@@ -1,0 +1,153 @@
+* {
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  box-sizing: border-box;
+}
+
+.header {
+  padding: 0 250px 100px 250px;
+}
+
+.list {
+  list-style: none;
+}
+
+.list-item {
+  display: inline;
+  margin-left: 40px;
+}
+
+.link {
+  text-decoration: none;
+  color: #828282;
+  text-shadow: 0px 2px 5px #e4dddd;
+}
+
+.link--active {
+  color: black;
+}
+
+.link:hover {
+  color: black;
+}
+
+.navigation {
+  text-align: center;
+  border-bottom: 1px solid black;
+  margin: auto;
+}
+
+.header-1 {
+  font-style: normal;
+  font-size: 47px;
+  line-height: 64px;
+  font-weight: 700;
+}
+
+#section-about-me {
+  background-color: #f6f6f6;
+  padding: 170px 480px 100px 470px;
+}
+
+.subtitle {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 46px;
+  margin: 0 0 30px;
+}
+
+.section-skills,
+.section-portfolio,
+.section-contacts {
+  text-align: center;
+  padding: 100px 0;
+}
+
+.skill__description {
+  font-family: Gilroy-Bold;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 600;
+  color: #828282;
+}
+
+.stars-container {
+  margin-top: 60px;
+}
+
+.star {
+  margin-right: 8px;
+}
+
+.skill {
+  display: inline-block;
+  padding: 0 45px;
+}
+
+.skills__container {
+  margin-top: 80px;
+}
+
+.section-portfolio {
+  background: #f6f6f6;
+}
+
+.link-portfolio {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  text-decoration-line: underline;
+  color: #070707;
+}
+
+.first-port,
+.second-port {
+  padding-bottom: 166px;
+}
+
+.know-more {
+  padding-bottom: 85px;
+}
+
+.button {
+  background-color: black;
+  border-radius: 10px;
+  font-size: 25px;
+  padding: 10px;
+}
+
+.text-button {
+  color: rgb(255, 255, 255);
+}
+
+.contacts-container {
+  padding-top: 46px;
+  padding-bottom: 44px;
+}
+
+.icon1,
+.icon2,
+.icon3,
+.icon4 {
+  margin-left: 60px;
+}
+
+.contacts-text {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: #828282;
+}
+.section-about-me,
+.section-skills,
+.section-portfolio,
+.footer {
+  text-align: center;
+  padding: 100px 250px;
+}

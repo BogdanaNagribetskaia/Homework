@@ -2,25 +2,31 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
 }
 
-body{
- background-image: url('../background__img.jpg');
+body {
+  background-color: #625f57;
 }
 
 .header {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   color: rgb(255, 255, 255);
   align-items: center;
+  position: fixed;
+  top: 0;
+  background-color: #524f49;
+  z-index: 100;
 }
 
-.header__logo{
+.header__logo {
   display: flex;
+  font-size: 24px;
 }
 
 .header__navigation {
@@ -31,7 +37,7 @@ body{
   align-items: center;
 }
 
-.header__navigation-item{
+.header__navigation-item {
   border-bottom: 7px solid transparent;
   text-decoration: none;
   color: #ffffff;
@@ -55,28 +61,33 @@ body{
   display: flex;
 }
 
+.homework:first-child {
+  padding-top: 100px;
+}
+
 .homework__list {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.homework__list-name{
+.homework__list-name {
   margin-bottom: 15px;
   color: #ffffff;
 }
 
-.homework__link{
+.homework__link {
   text-decoration: none;
   color: #ffffff;
   letter-spacing: 1px;
   margin-left: 25px;
 }
 
-.homework__item{
+.homework__item {
   border-bottom: 5px solid transparent;
   color: #ffffff;
   transition: 0.4s ease-in-out;
+  padding: 8px 0;
   margin: 10px;
 }
 .homework__item:hover {

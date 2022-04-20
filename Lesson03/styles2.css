@@ -1,0 +1,26 @@
+.stars-container {
+  padding: 20px;
+}
+.star {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-image: url(img/EmptyStar.png);
+  background-repeat: no-repeat;
+}
+
+.stars-1,
+.stars-2,
+.stars-3,
+.stars-4,
+.stars-5 {
+  margin-top: 4px;
+}
+
+.stars-1 .star:nth-child(-n + 1),
+.stars-2 .star:nth-child(-n + 2),
+.stars-3 .star:nth-child(-n + 3),
+.stars-4 .star:nth-child(-n + 4),
+.stars-5 .star:nth-child(-n + 5) {
+  background-image: url(img/Star.png);
+}
