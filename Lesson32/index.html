@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="../favicon.png" />
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.js">
+    <title>DOM & Events</title>
+</head>
+
+<body>
+    <!-- List -->
+    <div id="js-app" class="app">
+        <h1 class="title">
+            DOM & Events
+        </h1>
+        <h2 class="subtitle">
+            Todo list
+
+        </h2>
+        <div class="todo">
+            <div class="todo__create">
+                <input value="" id="js-todo-input" placeholder="Поле вводa" type="text" class="todo__input">
+                <button id="js-todo-btn" type="button" class="todo__btn">
+                    <span>
+                        Добавить в список
+                    </span>
+                </button>
+            </div>
+            <ul class="todo__list" id="js-todo-list">
+                <li class="todo__item">
+                    Прогуляться
+                </li>
+                <li class="todo__item">
+                    Приготовить ужин
+                </li>
+                <li class="todo__item">
+                    Сделать домашку по курсам
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Form -->
+    <button type="button" class="todo__btn js-toggle-registration-modal">
+        <span>
+            Регистрация
+        </span>
+    </button>
+    <!-- Modal -->
+    <div id="js-registration-modal" class="modal">
+        <form class="form" action="" method="post" id="js-registration-form">
+            <h2 class="form__title">
+                <span>
+                    Регистрация
+                </span>
+                <button type="button" class=" form__btn__x js-toggle-registration-modal">
+                    <span>
+                        X
+                    </span>
+                </button>
+            </h2>
+            <div class="form__wrapper">
+                <label for="" class="form__label">
+                    <span class="form__subtitle">
+                        Имя
+                    </span>
+                    <input id="js-registration-form-first-name" name="firstName" type="text" class="form__input">
+                </label>
+                <label for="" class="form__label">
+                    <span class="form__subtitle">
+                        Фамилия
+                    </span>
+                    <input id="js-registration-form-last-name" name="lastName" type="text" class="form__input">
+                </label>
+                <div class="form__btn__wrapper">
+                    <button type="submit" class="form__btn">
+                        <span>Регистрация</span>
+                    </button>
+                </div>
+
+            </div>
+        </form>
+    </div>
+
+
+
+
+    <!-- Script -->
+    <script defer type="module" src="index.js"></script>
+</body>
+
+</html>
