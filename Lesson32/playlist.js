@@ -1,6 +1,4 @@
-const createElement = (tagName) => document.createElement(tagName);
-
-var playList = [
+const songs = [
   {
     author: 'LED ZEPPELIN',
     song: 'STAIRWAY TO HEAVEN',
@@ -35,14 +33,14 @@ var playList = [
   },
 ];
 
-const playListList = document.getElementById('js-playList-list');
+const playList = document.getElementById('js-playList');
 const showPlayList = () => {
-  playList.forEach((item) => {
-    let li = createElement('li');
+  songs.forEach((item) => {
+    let li = document.createElement('li');
     li.innerText = item.song;
-    playListList.appendChild(li);
+    playList.appendChild(li);
   });
 };
 showPlayList();
 
-export { playList };
+export { songs };

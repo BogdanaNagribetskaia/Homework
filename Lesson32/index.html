@@ -16,43 +16,14 @@
 </head>
 
 <body>
-    <!-- List -->
-    <div id="js-app" class="app">
-        <h1 class="title">
-            DOM & Events
-        </h1>
-        <h2 class="subtitle">
-            Todo list
-
-        </h2>
-        <div class="todo">
-            <div class="todo__create">
-                <input value="" id="js-todo-input" placeholder="Поле вводa" type="text" class="todo__input">
-                <button id="js-todo-btn" type="button" class="todo__btn">
-                    <span>
-                        Добавить в список
-                    </span>
-                </button>
-            </div>
-            <ul class="todo__list" id="js-todo-list">
-                <li class="todo__item">
-                    Прогуляться
-                </li>
-                <li class="todo__item">
-                    Приготовить ужин
-                </li>
-                <li class="todo__item">
-                    Сделать домашку по курсам
-                </li>
-            </ul>
-        </div>
-    </div>
     <!-- Form -->
-    <button type="button" class="todo__btn js-toggle-registration-modal">
-        <span>
-            Регистрация
-        </span>
-    </button>
+    <div class="btn-wrapper">
+        <button type="button" class="todo__btn js-toggle-registration-modal">
+            <span>
+                Регистрация
+            </span>
+        </button>
+    </div>
     <!-- Modal -->
     <div id="js-registration-modal" class="modal">
         <form class="form" action="" method="post" id="js-registration-form">
@@ -88,8 +59,52 @@
             </div>
         </form>
     </div>
+    <!-- List -->
+    <div id="js-app" class="app">
+        <h1 class="title">
+            DOM & Events
+        </h1>
+        <h2 class="subtitle">
+            Todo list
 
-
+        </h2>
+        <div class="todo">
+            <div class="todo__create">
+                <input value="" id="js-todo-input" placeholder="Поле вводa" type="text" class="todo__input">
+                <button id="js-todo-btn" type="button" class="todo__btn">
+                    <span>
+                        Добавить в список
+                    </span>
+                </button>
+            </div>
+            <ul class="todo__list" id="js-todo-list">
+                <li class="todo__item">
+                    Прогуляться
+                </li>
+                <li class="todo__item">
+                    Приготовить ужин
+                </li>
+                <li class="todo__item">
+                    Сделать домашку по курсам
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Traffic lights -->
+    <div class="traffic">
+        <div class="traffic__lights">
+            <div class="js-circle traffic__circle active"></div>
+            <div class="js-circle traffic__circle "></div>
+            <div class="js-circle traffic__circle"></div>
+        </div>
+        <button type="button" class="traffic__button" id="js-toggle">
+            <span>Toggle</span>
+        </button>
+    </div>
+    <!-- Songs -->
+    <div class="songs">
+        <ol class="songs-playList" id="js-playList"></ol>
+    </div>
 
 
     <!-- Script -->

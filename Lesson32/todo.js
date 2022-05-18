@@ -12,7 +12,6 @@ const createNewTodoItem = () => {
       li.classList.add('todo__item');
       // Запись текста из инпута
       li.innerText = inputValue;
-
       // Прослушка, удаление по клику из дом структуры
       li.addEventListener('click', () => {
         li.remove();
@@ -30,4 +29,5 @@ const createNewTodoItem = () => {
 };
 
 todoBtn.addEventListener('click', createNewTodoItem);
-export { todo };
+
+export { createNewTodoItem };

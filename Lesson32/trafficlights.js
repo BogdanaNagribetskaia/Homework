@@ -1,38 +1,32 @@
-//* Створити HTML-сторінку зі світлофором і кнопкою, яка перемикає світлофор на наступний колір.
-// const getElementById = (id) => document.getElementById(id);
-const LIGTHS = {
+const circleList = document.getElementsByClassName('js-circle');
+
+const TRAFFIC = {
   RED: 'red',
   YELLOW: 'yellow',
   GREEN: 'green',
 };
-let active = null;
 
-const trafficLights = () => {
-  console.log(active);
-  // to default
-  const items = document.getElementsByClassName('js-light');
-  // console.log(items);
-  for (const item of items) {
-    item.classList.remove('active');
-  }
-  // check active
-  switch (active) {
-    case LIGTHS.RED: {
-      items[1].classList.add('active');
-      active = LIGTHS.YELLOW;
-      break;
-    }
-    case LIGTHS.YELLOW: {
-      items[2].classList.add('active');
-      active = LIGTHS.GREEN;
-      break;
-    }
-    default: {
-      items[0].classList.add('active');
-      active = LIGTHS.RED;
-    }
-  }
-  console.log(active);
-};
+let activeTraffic = TRAFFIC.RED;
 
-export { trafficLights };
+document.getElementById('js-toggle').addEventListener('click', () => {
+  //Вытянули элемент из документа по айди.Навешиваем прослушку событий клик, при каждом клике запуск анонимной стрел фции, которая будет удалять класс эктив(фороф, потому что работаем с хтмл коллекцией)
+  for (const circle of circleList) {
+    circle.classList.remove('active');
+  }
+
+  switch (activeTraffic) {
+    case TRAFFIC.RED:
+      activeTraffic = TRAFFIC.YELLOW;
+      circleList[1].classList.add('active');
+      break;
+    case TRAFFIC.YELLOW:
+      activeTraffic = TRAFFIC.GREEN;
+      circleList[2].classList.add('active');
+      break;
+    case TRAFFIC.GREEN:
+      activeTraffic = TRAFFIC.RED;
+      circleList[0].classList.add('active');
+      break;
+  }
+});
+export { circleList };
